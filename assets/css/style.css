@@ -13,21 +13,49 @@
 
 /* Início NavBar */
 
-.container-fluid{
-    height: 100px;
+div.divnavbar-big{
     background-color: #141414;
     position: fixed;
-    margin-top: 80px;
-    display: flex;
+    width: 100%;
     z-index: 1000;
-    transition: box-shadow 0.3s ease; /* transição suave */
+    transition: box-shadow 0.3s ease;  /* transição suave */
+    margin-top: -82px;
 }
 
-.container-fluid.scrolled{
+div.divnavbar-medium{
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;  /* transição suave */
+    margin-top: -82px;
+}
+
+div.divnavbar-small{
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;  /* transição suave */
+    margin-top: -82px;
+}
+
+div.divnavbar.scrolled{
     box-shadow: 0px 5px 5px black;
 }
 
-.nome{
+div.row{
+    height: 100px;
+}
+
+div.cols{
+    align-content: center;
+}
+
+a.mx-4{
+    color: white;
+    text-decoration: none;
+    cursor: default;
     color: rgb(255, 255, 255);
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
@@ -35,20 +63,15 @@
     font-style: normal;
     text-decoration: none;
     font-size: 25px;
-    padding: 20px;
-    position: fixed;
 }
 
-a.nome:hover{
+a.mx-4:hover{
     color: white;
-    cursor: default;
 }
 
-.navbar-nav{
-    margin-left: 1420px;
-}
-
-.menu{
+a.px-3{
+    color: white; 
+    text-decoration: none;
     font-family: "Afacad", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -56,11 +79,10 @@ a.nome:hover{
     font-size: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 20px;
 }
 
-a.menu:hover{
-    color: #e0e0e0;
+a.px-3:hover{
+    color: white;
 }
 
 /* Fim NavBar */
@@ -68,7 +90,7 @@ a.menu:hover{
 /* Início Primeira Parte */
 
 .divprimeiraparte{
-    height: 860px;
+    height: 1000px;
     text-align: center;
     align-content: center;
     justify-items: center;
@@ -238,8 +260,20 @@ a.menu:hover{
 
 /* Início Terceira Parte - Trabalhos */
 
-.divterceiraparte{
+.divterceiraparte-big{
     height: 3608px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.divterceiraparte-medium{
+    height: 2908px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.divterceiraparte-small{
+    height: 2158px;
     text-align: center;
     background-color: #141414;
 }
@@ -272,9 +306,27 @@ a.menu:hover{
     animation-range: entry 0% cover 40%;
 }
 
-.imgs{
+.imgs-big{
     width: 982px;
     height: 552px;
+    border-radius: 2px;
+    animation: appear_transformD linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.imgs-medium{
+    width: 686px;
+    height: 384px;
+    border-radius: 2px;
+    animation: appear_transformD linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.imgs-small{
+    width: 350px;
+    height: 196px;
     border-radius: 2px;
     animation: appear_transformD linear;
     animation-timeline: view();
