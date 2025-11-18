@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Início Body */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+}
+
+/* Fim Body */
+
+/* Início NavBar */
+
+.container-fluid{
+    height: 100px;
+    background-color: #141414;
+    position: fixed;
+    margin-top: 80px;
+    display: flex;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease; /* transição suave */
+}
+
+.container-fluid.scrolled{
+    box-shadow: 0px 5px 5px black;
+}
+
+.nome{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    position: fixed;
+}
+
+a.nome:hover{
+    color: white;
+    cursor: default;
+}
+
+.navbar-nav{
+    margin-left: 1420px;
+}
+
+.menu{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+a.menu:hover{
+    color: #e0e0e0;
+}
+
+/* Fim NavBar */
+
+/* Início Primeira Parte */
+
+.divprimeiraparte{
+    height: 860px;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    margin-top: 82px;
+}
+
+.profile{
+    width: 100px;
+    height: 100px;
+    opacity: 0.0;
+    position: relative;
+    display: block;
+    animation: text_reveal 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.profile span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+.nome2{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    position: relative;
+    display: block;
+    width: 327.5px;
+    color: transparent;
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.nome2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+.inf{
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    position: relative;
+    display: block;
+    width: 251px;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+.inf span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+.redes{
+    width: 200px;
+    height: 60px;
+    justify-self: center;
+    justify-items: center;
+    opacity: 0.0;
+    animation: text_reveal 2s ease forwards;
+    animation-delay: 2s;
+}
+
+.redes span{
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+.icone{
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+}
+
+/* Fim Primeira Parte */
+
+/* Início Segunda Parte - Sobre Mim */
+
+.divsegundaparte{
+    height: 960px;
+    text-align: center;
+    background-color: #fff1e0;
+}
+
+.divsobremim{
+    background-color: #fff1e0;
+}
+
+.sobremim{
+    color: rgb(0, 0, 0);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 60px;
+    padding-top: 90px;
+    background-color: #fff1e0;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.textosobremim{
+    color: rgb(0, 0, 0);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: justify;
+    background-color: #fff1e0;
+    padding-top: 50px;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.textosobremim2{
+    color: rgb(0, 0, 0);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: justify;
+    background-color: #fff1e0;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.minieu{
+    width: 210px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #141414;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Fim Segunda Parte - Sobre Mim */
+
+/* Início Terceira Parte - Trabalhos */
+
+.divterceiraparte{
+    height: 3608px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.trabalhos{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 60px;
+    padding-top: 90px;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.titulo{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 100px;
+    animation: appear_transformD linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.imgs{
+    width: 982px;
+    height: 552px;
+    border-radius: 2px;
+    animation: appear_transformD linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.inf2{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    animation: appear_transformD linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.figma{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 60px;
+    padding-top: 90px;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Fim Terceira Parte - Trabalhos */
+
+/* Inicio Quarta Parte - Contato */
+
+.divquartaparte{
+    height: 960px;
+    text-align: center;
+    background-color: #fff1e0;
+}
+
+.contato{
+    color: rgb(0, 0, 0);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 60px;
+    padding-top: 90px;
+    background-color: #fff1e0;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.email{
+    color: rgb(0, 0, 0);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 60px;
+    width: 300px;
+    justify-self: center;
+    transition: all linear 160ms;
+    cursor: default;
+    animation: appear_transformE linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    background-color: #fff1e0;
+}
+
+.email:hover{
+    transform: scale(1.09);
+}
+
+.voltar{
+    color: rgb(0, 0, 0);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 60px;
+    width: 300px;
+    justify-self: center;
+    transition: all linear 160ms;
+    animation: appear_transformE linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    background-color: #fff1e0;
+}
+
+/* Fim Quarta Parte - Contato */
+
+/* Início Keyframes */
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal {
+    100% {
+        color: white;
+        opacity: 1.0;
+    }
+}
+
+@keyframes appear_scale {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes appear_transformE {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear_transformD {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Fim Keyframes */
