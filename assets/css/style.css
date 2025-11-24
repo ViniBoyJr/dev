@@ -360,6 +360,20 @@ a.dropdown-item:hover{
     animation-range: entry 0% cover 40%;
 }
 
+.titulo-mobile{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 100px;
+    animation: appear_scale linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
 .imgs-big{
     width: 982px;
     height: 552px;
@@ -382,7 +396,7 @@ a.dropdown-item:hover{
     width: 350px;
     height: 196px;
     border-radius: 2px;
-    animation: appear_transformD linear;
+    animation: appear_scale linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -398,6 +412,21 @@ a.dropdown-item:hover{
     padding-top: 10px;
     padding-bottom: 20px;
     animation: appear_transformD linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.inf2-mobile{
+    color: rgb(255, 255, 255);
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    animation: appear_scale linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
